@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula006</title>
+</head>
+<style>
+    body{
+        background-color: lightpink;
+    }
+</style>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem optio, ipsam aliquam magnam voluptatem nam recusandae architecto iure mollitia corporis libero repellat provident voluptatum possimus ullam illum laborum. Eligendi, quis.</p>
+    <script>
+        //var n1 = Number(window.prompt('digite um numero: ')) // porem posso usar Number.parseInt ou Number.parseFloat
+        //var n2 = Number(window.prompt('digite outro numero: '))
+        //var soma = n1 + n2
+        //window.alert('A soma é: ' + String(soma)) // ou soma.toString()
+        //window.alert(`A soma entre ${n1} e ${n2} é: ${soma}`)
+        var nome = window.prompt('Digite seu nome: ')
+        var salario = Number(window.prompt('Digite seu salario: '))
+        //document.write(`olá ${nome} seu nome tem ${nome.length} letras e em letras maiusculas fica ${nome.toUpperCase()} e em letras minusculas ${nome.toLowerCase()}`)
+        var dolar = salario / 5.52
+        var euro = salario / 6.16
+        // salario.toFixed(2)
+        // salario.toFixed(2).replace('.', ',')
+        document.write(`Olá ${nome}! seu salario nas principais moedas são: <br> ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} <br> ${dolar.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})} <br> ${euro.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})}` )
+    </script>
+</body>
+</html>
