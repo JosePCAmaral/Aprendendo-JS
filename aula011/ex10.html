@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula11</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    <label for="ivel">Velocidade do veiculo em <strong>km/h</strong>: </label>
+    <input type="number" name="vel" id="ivel">
+    <input type="button" value="inspecionar" id="ins">
+    <div id="res"></div>
+    <script>
+        var i = window.document.getElementById('ins')
+        i.addEventListener('click', inspecionar)
+        function inspecionar(){
+            var v = Number(window.document.getElementById('ivel').value)
+            var res = window.document.getElementById('res')
+            res.innerHTML = `<p>Sua velocidade é de <strong>${v}km/h</strong></p>`
+            if(v > 100){
+                res.innerHTML += '<p>Voce foi <strong>MULTADO</strong> por excesso de velocidade</p>'
+            }
+            res.innerHTML += 'sempre use o sinto de segurança!'
+        }
+    </script>
+</body>
+</html>
