@@ -2,19 +2,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ex1</title>
+    <title>ex2</title>
     <link rel="stylesheet" href="style2.css">
 </head>
 <body>
     <header>
-        <h1>Titulo</h1>
+        <h1>Verificador de Idade</h1>
     </header>
     <section>
-        <div>
-
+        <div id="form">
+            <form action="" autocomplete="on">
+                <fieldset>
+                    <legend>Formulário</legend>
+                    <p><label for="iano">Digite seu ano de nascimento: </label> <input type="number" name="ano" id="iano"></p>
+                    <p>Sexo:
+                        <input type="radio" name="radsex" id="mas" checked>
+                        <label for="mas">Masculino</label>
+                        <input type="radio" name="radsex" id="fem">
+                        <label for="fem">Feminino</label>
+                    </p>
+                    <p>
+                        <input type="button" value="Enviar" id="botao">
+                    </p>
+                </fieldset>
+            </form>
         </div>
-        <div>
-
+        <div id="res">
+            <p>Preencha os dados acima para ver o resultado!</p>
         </div>
     </section>
     <footer>

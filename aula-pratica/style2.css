@@ -12,19 +12,47 @@ body{
 
 header{
     text-align: center;
-    padding: 100px;
+    padding: 60px;
+    font-weight: bolder;
+    font-size: 1.5em;
 }
 
 section{
     border-radius: 10px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.364);
-    width: 500px;
-    height: 300px;
+    width: 600px;
+    height: 450px;
     background-color: white;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+div{
+    color: black;
+}
+
+div#form{
+    padding: 10px;
+}
+
+fieldset > legend{
+    margin-left: 20px;
+    font-size: 1.2em;
+}
+
+input[type=number]{
+    border: 1px solid black;
+}
+
+fieldset > p{
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+div#res > p{
+    padding: 10px;
 }
 
 footer{
