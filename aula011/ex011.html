@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex11.js</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <label for="ipais">Digite seu pais de origem: </label>
+    <input type="text" name="pais" id="ipais">
+    <input type="button" value="Verificar" id="ibotao">
+    <div id="idiv"></div>
+
+    <script>
+        var b = window.document.getElementById('ibotao')
+        b.addEventListener('click', verificar)
+
+        function verificar(){
+            var d = window.document.getElementById('idiv')
+            var p = window.document.getElementById('ipais').value
+            d.innerHTML = `<p>Você nasceu em <strong>${p}</strong> </p>`
+            if(p == 'Brasil'){
+                d.innerHTML += 'Então Você é Brasileiro'
+            }else{
+                d.innerHTML += 'Então você é estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>
