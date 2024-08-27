@@ -20,13 +20,51 @@ header{
 section{
     border-radius: 10px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.364);
-    width: 600px;
-    height: 450px;
+    width: 90vw;
+    height: 60vh;
     background-color: white;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    max-width: 600px;
+    max-height: 450px;
+}
+
+div{
+    color: black;
+}
+
+div#form > fieldset{
+    margin: 10px;
+}
+
+div#form > fieldset > legend{
+    margin-left: 20px;
+    font-size: 1.3em;
+}
+
+div#form > fieldset > p{
+    padding: 10px;
+    padding-left: 20px;
+    font-size: 1.1em;
+}
+
+div#form > fieldset > p > input#iinicio{
+    margin-left: 6px;
+}
+
+div#form > fieldset > p > input#ifim{
+    margin-left: 10px;
+}
+
+div#form > fieldset > p > input#ibotao{
+    width: 60px;
+}
+
+div#pro{
+    text-align: center;
+    font-size: 1.2em;
 }
 
 footer{
@@ -35,4 +73,14 @@ footer{
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
+}
+
+footer > p > a{
+    color: white;
+    text-decoration: none;
+}
+
+footer > p > a:hover{
+    font-weight: bolder;
+    text-decoration: underline;
 }
