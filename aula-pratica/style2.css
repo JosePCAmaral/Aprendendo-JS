@@ -33,6 +33,8 @@ div{
     color: black;
 }
 
+
+
 div#form{
     padding: 10px;
 }
@@ -51,8 +53,17 @@ fieldset > p{
     font-size: 1.1em;
 }
 
+div#res{
+    text-align: center;
+}
+
+div#res > img{
+    border-radius: 50%;
+}
+
 div#res > p{
     padding: 10px;
+    padding-bottom: 25px;
 }
 
 footer{
