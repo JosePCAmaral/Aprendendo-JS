@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(124, 190, 216);
+    color: white;
+}
+
+header{
+    text-align: center;
+    padding: 60px;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+section{
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.364);
+    width: 90vw;
+    height: 60vh;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    max-height: 450px;
+}
+
+div{
+    color: black;
+}
+
+div#dnum > p{
+    text-align: center;
+    padding: 10px;
+}
+
+div#res > p{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    top: 97%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+footer > p > a{
+    color: white;
+    text-decoration: none;
+}
+
+footer > p > a:hover{
+    font-weight: bolder;
+    text-decoration: underline;
+}
